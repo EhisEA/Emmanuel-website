@@ -1,0 +1,217 @@
+// Content parsed from the info.md file — single source of truth
+
+export const siteContent = {
+  name: "Emmanuel Ayemere",
+  title: "Software Engineer · Systems Architect · Builder",
+  tagline: "Building software systems, teams, and tools for the AI era.",
+  github: "https://github.com/EhisEA",
+  linkedin: "https://linkedin.com/in/ayemere-emmanuel",
+  email: "emmanueleayemere@gmail.com",
+
+  hero: {
+    heading: "Builder of Software Systems",
+    description:
+      "For the past 7+ years I have been building systems across healthcare, fintech, live streaming, and digital marketplaces.",
+    philosophy: [
+      "I don't define myself by the tools I use.",
+      "I define myself by the systems I build and the problems I solve.",
+    ],
+    aiInterest:
+      "Recently I have become deeply interested in how AI transforms how humans build software.",
+    aiVision:
+      "I am exploring how AI can act not just as a chatbot, but as an executable reasoning tool that helps humans design and build systems faster.",
+  },
+
+  about: {
+    intro:
+      "I am a software engineer and systems architect who enjoys building complex systems from scratch and helping teams deliver products that scale.",
+    journey:
+      "Across my career I have stepped into challenging environments — rebuilding systems, stabilizing teams, and designing architectures that enable products to grow.",
+    commitment:
+      "I stay with the systems I build long enough to see them evolve, scale, and create real impact.",
+    domains: [
+      "Telemedicine infrastructure",
+      "Cross-border payments",
+      "Crypto trading platforms",
+      "Live streaming platforms",
+      "Food delivery marketplaces",
+    ],
+    mentoring:
+      "Along the way I have also mentored engineers, helped teams think more clearly about problems, and led projects from idea → architecture → production.",
+    currentFocus:
+      "Today my curiosity is increasingly focused on the AI-assisted future of software development.",
+  },
+
+  howIThink: {
+    premise: "I see engineering primarily as problem solving.",
+    observation: "Languages and frameworks change constantly.",
+    constants: [
+      "understand systems",
+      "reason through problems",
+      "design architectures",
+      "build reliable solutions",
+    ],
+    aiAmplification: "AI is now amplifying this process.",
+    quote: "AI expands how quickly humans can move from idea → working system.",
+    future:
+      "The future of engineering will likely involve humans collaborating with AI systems to design, reason about, and build software.",
+    closing: "This is the frontier I am exploring.",
+  },
+
+  systems: [
+    {
+      title: "Telemedicine Infrastructure",
+      company: "MobiHealth",
+      problem:
+        "Joined after two CTOs left within 12 months and the company had no shipped product.",
+      built: [
+        "Rebuilt core architecture",
+        "Stabilized engineering team",
+        "Built telemedicine platform from scratch",
+        "Designed B2B infrastructure layer",
+      ],
+      impact: [
+        "500% increase in engineering productivity",
+        "200% revenue growth",
+        "Telemedicine infrastructure deployed to clinics in Abuja",
+      ],
+    },
+    {
+      title: "Cross-Border Payments Platform",
+      company: "Hizo",
+      problem:
+        "Architected and built a cross-border payments platform enabling African users to move money internationally.",
+      built: [
+        "Currency conversion rate engine",
+        "Multi-wallet infrastructure",
+        "Virtual card issuance",
+        "Multi-tier KYC identity verification",
+      ],
+      impact: [
+        "1000% increase in users",
+        "3000% increase in revenue",
+      ],
+    },
+    {
+      title: "Crypto Trading Platform",
+      company: "Vent Africa",
+      problem:
+        "Led mobile and platform development for a crypto trading ecosystem.",
+      built: [
+        "Multi-asset trading",
+        "Fiat and crypto withdrawals",
+        "Transaction analytics",
+        "In-app education platform",
+        "Gamified referral system",
+      ],
+      impact: [
+        "50% increase in retention",
+        "Improved performance and security",
+      ],
+    },
+    {
+      title: "Live Streaming Platform",
+      company: "Raven Live",
+      problem:
+        "Built a platform enabling African creators to monetize live content globally.",
+      built: [
+        "Live video streaming",
+        "Digital wallet",
+        "Ticketing infrastructure",
+        "Real-time chat",
+        "Creator monetization tools",
+      ],
+      impact: [],
+    },
+  ],
+
+  aiExperiments: {
+    workshops: {
+      title: "AI Beyond the Chat Interface",
+      description:
+        "I run weekend sessions teaching developers and professionals how to use AI as an executable tool rather than just a chatbot.",
+      result:
+        "Participants typically report productivity increases of 200–500% after integrating AI into their workflows.",
+      topics: [
+        "AI-augmented development",
+        "Reasoning with AI systems",
+        "Using AI to generate architecture and systems",
+        "Building tools around intent",
+      ],
+    },
+    exploration: {
+      title: "Current Exploration",
+      description: "I am currently experimenting with ideas around:",
+      areas: [
+        "AI-assisted system architecture",
+        "AI developer tooling",
+        "Agent-based workflows",
+        "Intent → system generation",
+      ],
+      example: {
+        description:
+          "A system where a developer describes a problem and AI helps generate:",
+        outputs: [
+          "System architecture",
+          "Implementation plan",
+          "Code scaffolding",
+          "Working prototype",
+        ],
+      },
+    },
+  },
+
+  timeline: [
+    {
+      year: "2020",
+      description:
+        "Built live streaming platform infrastructure for African creators.",
+    },
+    {
+      year: "2021",
+      description:
+        "Joined MobiHealth and rebuilt telemedicine infrastructure.",
+    },
+    {
+      year: "2022–2024",
+      description:
+        "Worked across fintech and crypto platforms building scalable systems.",
+    },
+    {
+      year: "2025",
+      description: "Architected marketplace and delivery platforms.",
+    },
+    {
+      year: "Now",
+      description:
+        "Exploring AI-assisted system design and agentic development workflows.",
+    },
+  ],
+
+  writing: {
+    intro: "Topics I enjoy writing about:",
+    topics: [
+      "AI will change how software is built",
+      "Why engineers should think like architects",
+      "AI beyond the chat interface",
+      "From idea to system",
+    ],
+  },
+
+  interests: [
+    "Football",
+    "Teaching",
+    "Mentoring",
+    "Chess",
+    "Sketching",
+    "Systems Thinking",
+  ],
+
+  thesis: {
+    statement:
+      "The future of software development is not just writing code.",
+    vision:
+      "It is designing systems in collaboration with intelligent tools.",
+    mission: "I want to help build that future.",
+  },
+};
