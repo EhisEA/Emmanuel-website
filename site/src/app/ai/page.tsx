@@ -3,6 +3,7 @@ import Card from "@/components/Card";
 import { siteContent } from "@/lib/content";
 import { Metadata } from "next";
 import { Zap, Lightbulb, ArrowRight, Users } from "lucide-react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "AI Experiments — Emmanuel Ayemere",
@@ -67,6 +68,15 @@ export default function AIPage() {
               <p className="text-sm font-medium text-foreground">{topic}</p>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <Link
+            href="/masterclass"
+            className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-light"
+          >
+            Apply for the Next Session <ArrowRight size={14} />
+          </Link>
         </div>
       </Section>
 
