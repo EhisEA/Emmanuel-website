@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Timeline from "@/components/Timeline";
 import BuildWithMe from "@/components/BuildWithMe";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import { siteContent } from "@/lib/content";
 import { ArrowRight, Brain, Layers, Cpu, TrendingUp, Zap, Radio, Truck, Users, ExternalLink } from "lucide-react";
 import Link from "next/link";
@@ -13,23 +14,18 @@ export default function Home() {
       <Hero />
 
       {/* Metrics Strip */}
-      <Section className="border-b border-border">
+      <Section className="border-y border-border/50">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {siteContent.metrics.map((metric) => (
-            <div key={metric.label} className="text-center">
-              <p className="text-3xl font-bold text-accent md:text-4xl">
-                {metric.value}
-              </p>
-              <p className="mt-1 text-sm text-muted">{metric.label}</p>
-            </div>
+            <AnimatedCounter key={metric.label} value={metric.value} label={metric.label} />
           ))}
         </div>
       </Section>
 
       {/* How I Think */}
       <Section id="how-i-think">
-        <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
-          Philosophy
+        <p className="mb-4 font-mono text-xs tracking-widest text-accent">
+          &gt; philosophy
         </p>
         <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">
           How I Think
@@ -73,8 +69,8 @@ export default function Home() {
       <Section id="systems" className="bg-surface">
         <div className="mb-12 flex items-end justify-between">
           <div>
-            <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
-              Case Studies
+            <p className="mb-4 font-mono text-xs tracking-widest text-accent">
+              &gt; case_studies
             </p>
             <h2 className="text-3xl font-bold text-foreground md:text-4xl">
               Systems I&apos;ve Built
@@ -155,8 +151,8 @@ export default function Home() {
 
       {/* AI Experiments */}
       <Section id="ai-experiments">
-        <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
-          Exploration
+        <p className="mb-4 font-mono text-xs tracking-widest text-accent">
+          &gt; exploration
         </p>
         <h2 className="mb-8 text-3xl font-bold text-foreground md:text-4xl">
           AI Experiments
@@ -232,8 +228,8 @@ export default function Home() {
 
       {/* Timeline */}
       <Section id="timeline" className="bg-surface">
-        <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
-          Journey
+        <p className="mb-4 font-mono text-xs tracking-widest text-accent">
+          &gt; journey
         </p>
         <h2 className="mb-12 text-3xl font-bold text-foreground md:text-4xl">
           Timeline

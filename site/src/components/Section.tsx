@@ -17,9 +17,9 @@ export default function Section({ children, className = "", id }: SectionProps) 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`px-6 py-24 ${className}`}
+      className={`relative px-6 py-24 ${className}`}
     >
-      <div className="mx-auto max-w-6xl">{children}</div>
+      <div className="relative z-10 mx-auto max-w-6xl">{children}</div>
     </motion.section>
   );
 }
