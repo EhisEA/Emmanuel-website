@@ -6,9 +6,10 @@ import { Zap, Lightbulb, ArrowRight, Users } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Experiments — Emmanuel Ayemere",
+  title: "AI Experiments",
   description:
     "Teaching people across fields to use AI as an executable thinking and execution tool — not just a chatbot.",
+  alternates: { canonical: "/ai" },
 };
 
 export default function AIPage() {

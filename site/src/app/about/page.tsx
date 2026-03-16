@@ -3,9 +3,10 @@ import { siteContent } from "@/lib/content";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Emmanuel Ayemere",
+  title: "About",
   description:
     "Software engineer and systems architect building complex systems from scratch for 7+ years.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

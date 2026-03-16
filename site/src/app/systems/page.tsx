@@ -5,8 +5,9 @@ import { Metadata } from "next";
 import { ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Systems — Emmanuel Ayemere",
+  title: "Systems",
   description: "Case studies of systems built across healthcare, fintech, live streaming, and digital marketplaces.",
+  alternates: { canonical: "/systems" },
 };
 
 const statusStyles = {

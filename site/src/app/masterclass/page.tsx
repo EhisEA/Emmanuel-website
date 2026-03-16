@@ -160,7 +160,7 @@ export default function MasterclassPage() {
           >
             <div className="relative overflow-hidden rounded-2xl border border-border">
               <Image
-                src="/emmanuel-v4.jpg"
+                src="/emmanuel-v5.jpg"
                 alt="Emmanuel Ayemere"
                 width={400}
                 height={500}
