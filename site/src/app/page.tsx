@@ -242,8 +242,8 @@ export default function Home() {
       {/* Mentoring */}
       <Section id="mentoring">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
-            Leadership
+          <p className="mb-4 font-mono text-xs tracking-widest text-accent">
+            &gt; leadership
           </p>
           <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">
             {siteContent.mentoring.headline}
@@ -266,8 +266,8 @@ export default function Home() {
 
       {/* Contact CTA */}
       <Section className="bg-surface text-center">
-        <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
-          Connect
+        <p className="mb-4 font-mono text-xs tracking-widest text-accent">
+          &gt; connect
         </p>
         <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
           Let&apos;s Build Together

@@ -22,10 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className="min-h-screen bg-background font-sans text-foreground antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className="relative min-h-screen bg-background font-sans text-foreground antialiased">
+        <div className="relative z-10">
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
