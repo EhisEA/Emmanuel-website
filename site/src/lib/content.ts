@@ -62,6 +62,8 @@ export const siteContent = {
     {
       title: "Telemedicine Infrastructure",
       company: "MobiHealth",
+      url: "https://mobihealthinternational.com",
+      status: "live" as const,
       problem:
         "Joined after two CTOs left within 12 months and the company had no shipped product.",
       built: [
@@ -79,6 +81,8 @@ export const siteContent = {
     {
       title: "Cross-Border Payments Platform",
       company: "Hizo",
+      url: "https://hizo.africa",
+      status: "live" as const,
       problem:
         "Architected and built a cross-border payments platform enabling African users to move money internationally.",
       built: [
@@ -95,6 +99,8 @@ export const siteContent = {
     {
       title: "Crypto Trading Platform",
       company: "Vent Africa",
+      url: "https://vent.africa",
+      status: "live" as const,
       problem:
         "Led mobile and platform development for a crypto trading ecosystem.",
       built: [
@@ -112,6 +118,8 @@ export const siteContent = {
     {
       title: "Live Streaming Platform",
       company: "Raven Live",
+      url: "https://www.ravenlive.com",
+      status: "discontinued" as const,
       problem:
         "Built a platform enabling African creators to monetize live content globally.",
       built: [
@@ -123,7 +131,91 @@ export const siteContent = {
       ],
       impact: [],
     },
+    {
+      title: "Service Marketplace & Delivery",
+      company: "Trazo",
+      url: "https://usetrazo.com",
+      status: "live" as const,
+      problem:
+        "Designed and built an extensible service marketplace from scratch — not limited to food.",
+      built: [
+        "End-to-end ordering with scheduled/future orders",
+        "Wallet system with card and bank top-ups",
+        "\"Pay-for-Me\" social commerce feature",
+        "Real-time delivery tracking with QR verification",
+        "Rider earnings and wallet management",
+      ],
+      impact: [
+        "Full system architected and shipped from zero",
+        "Built and grew the engineering team",
+      ],
+    },
+    {
+      title: "Live Entertainment Platform",
+      company: "De9jaSpirit Talent Hunt",
+      url: "https://dth.ng",
+      status: "live" as const,
+      problem:
+        "Built the full talent competition experience — from auditions to live voting to monetization.",
+      built: [
+        "Talent competition with seasonal voting rounds",
+        "Social timeline with posts, reactions, and short-form video",
+        "Event ticketing with QR code passes",
+        "Live streaming for performances",
+        "In-app e-commerce and subscription system",
+        "Ad placement algorithm balancing revenue and UX",
+      ],
+      impact: [
+        "40% increase in platform revenue",
+        "Turned a competition app into a daily-use platform",
+      ],
+    },
+    {
+      title: "Food Delivery Platform",
+      company: "Chops",
+      url: "https://buychops.com",
+      status: "coming-soon" as const,
+      problem:
+        "Architected and built a food delivery platform end-to-end — customer, merchant, and rider systems.",
+      built: [
+        "Real-time delivery tracking",
+        "Payment integration",
+        "Notification infrastructure",
+        "Established engineering processes and team",
+      ],
+      impact: [],
+    },
+    {
+      title: "Food Delivery System",
+      company: "Kudel Express",
+      url: null,
+      status: "discontinued" as const,
+      problem:
+        "Designed full system architecture and built User, Vendor, and Delivery apps through to production launch.",
+      built: [
+        "Real-time communication",
+        "Payment infrastructure",
+        "Notification system",
+        "CI/CD pipeline",
+      ],
+      impact: [],
+    },
   ],
+
+  metrics: [
+    { value: "7+", label: "Years Building" },
+    { value: "8+", label: "Systems Shipped" },
+    { value: "500%", label: "Productivity Gains" },
+    { value: "3000%", label: "Revenue Growth" },
+  ],
+
+  mentoring: {
+    headline: "I build people, not just software.",
+    description:
+      "Long-term mentor to engineers and professionals across tech and adjacent industries. Several mentees now lead teams and run their own companies.",
+    details:
+      "Along the way I have helped teams think more clearly about problems, and led projects from idea → architecture → production.",
+  },
 
   aiExperiments: {
     workshops: {

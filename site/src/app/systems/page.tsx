@@ -2,10 +2,23 @@ import Section from "@/components/Section";
 import Card from "@/components/Card";
 import { siteContent } from "@/lib/content";
 import { Metadata } from "next";
+import { ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Systems — Emmanuel Ayemere",
   description: "Case studies of systems built across healthcare, fintech, live streaming, and digital marketplaces.",
+};
+
+const statusStyles = {
+  live: "bg-emerald-500/10 text-emerald-400",
+  "coming-soon": "bg-amber-500/10 text-amber-400",
+  discontinued: "bg-zinc-500/10 text-zinc-500",
+};
+
+const statusLabels = {
+  live: "Live",
+  "coming-soon": "Coming Soon",
+  discontinued: "Discontinued",
 };
 
 export default function SystemsPage() {
@@ -25,12 +38,34 @@ export default function SystemsPage() {
         <div className="flex flex-col gap-12">
           {siteContent.systems.map((system) => (
             <Card key={system.title} className="p-8 md:p-10">
-              <div className="mb-1 font-mono text-xs text-accent uppercase">
-                {system.company}
+              <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <div className="mb-1 font-mono text-xs text-accent uppercase">
+                    {system.company}
+                  </div>
+                  <h2 className="text-2xl font-bold text-foreground">
+                    {system.title}
+                  </h2>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span
+                    className={`rounded-full px-3 py-1 font-mono text-[11px] font-medium uppercase tracking-wider ${statusStyles[system.status]}`}
+                  >
+                    {statusLabels[system.status]}
+                  </span>
+                  {system.url && system.status === "live" && (
+                    <a
+                      href={system.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 rounded-full border border-border px-3 py-1 text-xs text-muted transition-colors hover:border-accent/30 hover:text-accent"
+                    >
+                      <ExternalLink size={12} />
+                      {system.url.replace("https://", "").replace("www.", "")}
+                    </a>
+                  )}
+                </div>
               </div>
-              <h2 className="mb-4 text-2xl font-bold text-foreground">
-                {system.title}
-              </h2>
 
               <div className="grid gap-8 md:grid-cols-3">
                 <div>

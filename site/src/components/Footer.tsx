@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, MessageCircle } from "lucide-react";
+import Link from "next/link";
 import { siteContent } from "@/lib/content";
 
 export default function Footer() {
@@ -27,12 +28,12 @@ export default function Footer() {
           >
             <Linkedin size={18} />
           </a>
-          <a
-            href={`mailto:${siteContent.email}`}
+          <Link
+            href="/contact"
             className="text-muted transition-colors hover:text-foreground"
           >
-            <Mail size={18} />
-          </a>
+            <MessageCircle size={18} />
+          </Link>
         </div>
       </div>
     </footer>
