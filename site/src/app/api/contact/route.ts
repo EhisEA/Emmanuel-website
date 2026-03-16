@@ -2,8 +2,6 @@ import { Resend } from "resend";
 import { NextResponse } from "next/server";
 import { buildContactEmailHtml } from "@/lib/email-template";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
@@ -15,9 +13,19 @@ export async function POST(request: Request) {
       );
     }
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const recipients = (process.env.CONTACT_TO_EMAILS || "")
+      .split(",")
+      .map((e) => e.trim())
+      .filter(Boolean);
+
+    if (recipients.length === 0) {
+      throw new Error("No recipient emails configured.");
+    }
+
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev",
-      to: "emmanueleayemere@gmail.com",
+      to: recipients,
       subject: `New message from ${name}`,
       replyTo: email,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
