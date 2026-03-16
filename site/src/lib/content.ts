@@ -221,14 +221,21 @@ export const siteContent = {
     workshops: {
       title: "AI Beyond the Chat Interface",
       description:
-        "I run weekend sessions teaching developers and professionals how to use AI as an executable tool rather than just a chatbot.",
+        "I run hands-on sessions teaching people across fields — engineers, product designers, product managers, institutional professionals, and more — how to use AI as an executable thinking and execution tool, not just a chatbot.",
       result:
-        "Participants typically report productivity increases of 200–500% after integrating AI into their workflows.",
+        "Participants typically report productivity increases of 200–500% after integrating AI into their existing workflows.",
+      participants: [
+        "Software Engineers",
+        "Product Designers",
+        "Product Managers",
+        "Production Engineers",
+        "Non-technical Professionals",
+      ],
       topics: [
-        "AI-augmented development",
-        "Reasoning with AI systems",
-        "Using AI to generate architecture and systems",
-        "Building tools around intent",
+        "AI-augmented workflows across disciplines",
+        "Reasoning and problem-solving with AI",
+        "Using AI to extend your existing skills",
+        "Moving from awareness to real execution",
       ],
     },
     exploration: {

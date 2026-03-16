@@ -172,17 +172,16 @@ export default function Home() {
             <p className="mb-4 font-mono text-sm text-accent">
               {siteContent.aiExperiments.workshops.result}
             </p>
-            <ul className="space-y-2">
-              {siteContent.aiExperiments.workshops.topics.map((topic) => (
-                <li
-                  key={topic}
-                  className="flex items-center gap-2 text-sm text-muted"
+            <div className="flex flex-wrap gap-1.5">
+              {siteContent.aiExperiments.workshops.participants.map((p) => (
+                <span
+                  key={p}
+                  className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted"
                 >
-                  <div className="h-1 w-1 rounded-full bg-accent" />
-                  {topic}
-                </li>
+                  {p}
+                </span>
               ))}
-            </ul>
+            </div>
           </Card>
           <Card>
             <h3 className="mb-2 text-lg font-semibold text-foreground">
