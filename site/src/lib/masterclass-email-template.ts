@@ -33,11 +33,6 @@ export function buildMasterclassConfirmationHtml(name: string) {
                 </tr>
                 <tr>
                   <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-bottom:16px;">
-                    The next session is <span style="color:#E5E7EB;font-weight:600;">Sunday, 8:00 PM WAT</span>.
-                  </td>
-                </tr>
-                <tr>
-                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-bottom:16px;">
                     Your application will be reviewed. If you're selected, you'll hear from us.
                   </td>
                 </tr>
