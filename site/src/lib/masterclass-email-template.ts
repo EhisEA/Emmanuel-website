@@ -1,3 +1,160 @@
+export function buildMasterclassConfirmationHtml(name: string) {
+  return `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body style="margin:0;padding:0;background-color:#0B0B0B;font-family:'Helvetica Neue',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#0B0B0B;padding:40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
+          <!-- Header -->
+          <tr>
+            <td style="padding-bottom:32px;">
+              <span style="font-size:20px;font-weight:bold;color:#E5E7EB;">EA</span><span style="font-size:20px;font-weight:bold;color:#6366F1;">.</span>
+            </td>
+          </tr>
+          <!-- Card -->
+          <tr>
+            <td style="background-color:#111111;border:1px solid #222222;border-radius:12px;padding:32px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <span style="font-size:18px;font-weight:600;color:#E5E7EB;">Hey ${name},</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-bottom:16px;">
+                    Your application for <a href="https://emmanuel-a.com/ai" style="color:#6366F1;font-weight:600;text-decoration:none;">AI Beyond the Chat Interface</a> has been received.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-bottom:16px;">
+                    The next session is <span style="color:#E5E7EB;font-weight:600;">Sunday, 8:00 PM WAT</span>.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-bottom:16px;">
+                    Your application will be reviewed. If you're selected, you'll hear from us.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;">
+                    Thanks for your interest.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:24px;font-size:15px;color:#E5E7EB;font-weight:500;">
+                    Emmanuel Ayemere
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="padding-top:32px;">
+              <span style="font-size:12px;color:#9CA3AF;">AI Beyond the Chat Interface | Masterclass</span>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
+export function buildMasterclassAcceptanceHtml(name: string) {
+  return `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body style="margin:0;padding:0;background-color:#0B0B0B;font-family:'Helvetica Neue',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#0B0B0B;padding:40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
+          <!-- Header -->
+          <tr>
+            <td style="padding-bottom:32px;">
+              <span style="font-size:20px;font-weight:bold;color:#E5E7EB;">EA</span><span style="font-size:20px;font-weight:bold;color:#6366F1;">.</span>
+            </td>
+          </tr>
+          <!-- Card -->
+          <tr>
+            <td style="background-color:#111111;border:1px solid #222222;border-radius:12px;padding:32px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-bottom:16px;">
+                    <span style="font-size:18px;font-weight:600;color:#E5E7EB;">Hey ${name},</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-bottom:16px;">
+                    You've been accepted into the next session of <a href="https://emmanuel-a.com/ai" style="color:#6366F1;font-weight:600;text-decoration:none;">AI Beyond the Chat Interface</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:16px;background-color:#1a1a2e;border:1px solid #6366F1;border-radius:8px;margin-bottom:16px;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#6366F1;font-weight:600;padding-bottom:8px;">Session Details</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size:15px;color:#E5E7EB;font-weight:600;">Sunday, March 29 · 8:00 – 9:30 PM WAT</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <a href="https://meet.google.com/imd-yrwc-mjv" style="display:inline-block;background-color:#6366F1;color:#ffffff;font-size:14px;font-weight:500;text-decoration:none;padding:10px 24px;border-radius:8px;">Join Google Meet</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-top:16px;padding-bottom:16px;">
+                    Come ready to learn, work and contribute. This is a hands-on and interactive session, not a lecture. We'll be solving real problems live.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;padding-bottom:16px;">
+                    It promises to be worth every minute you spend.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:15px;line-height:1.7;color:#D1D5DB;">
+                    A calendar invitation has also been sent. See you there.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:24px;font-size:15px;color:#E5E7EB;font-weight:500;">
+                    Emmanuel Ayemere
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="padding-top:32px;">
+              <span style="font-size:12px;color:#9CA3AF;">AI Beyond the Chat Interface | Masterclass</span>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
 export function buildMasterclassEmailHtml(
   name: string,
   email: string,
