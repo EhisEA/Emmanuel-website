@@ -56,8 +56,14 @@ export default function BuildWithMe() {
             {"> "}System idea received: &quot;{input}&quot;
           </p>
           <p className="mt-2 text-sm text-muted">
-            AI-assisted exploration coming soon. For now, reach out and
-            let&apos;s discuss this together.
+            AI-assisted exploration coming soon. For now,{" "}
+            <a
+              href="/contact"
+              className="text-accent underline underline-offset-2 hover:text-accent/80"
+            >
+              reach out
+            </a>{" "}
+            and let&apos;s discuss this together.
           </p>
         </motion.div>
       )}

@@ -1,4 +1,4 @@
-// Content parsed from the info.md file — single source of truth
+// Content parsed from the info.md file,single source of truth
 
 export const siteContent = {
   name: "Emmanuel Ayemere",
@@ -24,17 +24,17 @@ export const siteContent = {
 
   about: {
     intro:
-      "I am a software engineer and systems architect who enjoys building complex systems from scratch and helping teams deliver products that scale.",
+      "I am a software engineer and systems architect who enjoys building complex systems and helping teams deliver products that scale.",
     journey:
-      "Across my career I have stepped into challenging environments — rebuilding systems, stabilizing teams, and designing architectures that enable products to grow.",
+      "Across my career I have built across diverse domains, stabilizing teams and designing architectures that enable products to grow.",
     commitment:
       "I stay with the systems I build long enough to see them evolve, scale, and create real impact.",
     domains: [
       "Telemedicine infrastructure",
       "Cross-border payments",
-      "Crypto trading platforms",
-      "Live streaming platforms",
-      "Food delivery marketplaces",
+      "Crypto finance platforms",
+      "Talent discovery platforms",
+      "Multi-service delivery platforms",
     ],
     mentoring:
       "Along the way I have also mentored engineers, helped teams think more clearly about problems, and led projects from idea → architecture → production.",
@@ -65,17 +65,18 @@ export const siteContent = {
       url: "https://mobihealthinternational.com",
       status: "live" as const,
       problem:
-        "Joined after two CTOs left within 12 months and the company had no shipped product.",
+        "Built telemedicine and B2B infrastructure enabling clinics, HMOs, pharmacies, and more to plug into remote healthcare delivery.",
       built: [
         "Rebuilt core architecture",
         "Stabilized engineering team",
-        "Built telemedicine platform from scratch",
+        "Built telemedicine platform",
         "Designed B2B infrastructure layer",
+        "Internal tools for operations and management",
       ],
       impact: [
         "500% increase in engineering productivity",
-        "200% revenue growth",
-        "Telemedicine infrastructure deployed to clinics in Abuja",
+        "B2B infrastructure powering multiple clinic partnerships",
+        "Telemedicine infrastructure deployed across clinics, pharmacies, and PHCs",
       ],
     },
     {
@@ -84,7 +85,7 @@ export const siteContent = {
       url: "https://hizo.africa",
       status: "live" as const,
       problem:
-        "Architected and built a cross-border payments platform enabling African users to move money internationally.",
+        "Built a cross-border payments platform enabling users to spend money internationally.",
       built: [
         "Currency conversion rate engine",
         "Multi-wallet infrastructure",
@@ -97,20 +98,22 @@ export const siteContent = {
       ],
     },
     {
-      title: "Crypto Trading Platform",
+      title: "Crypto Finance Platform",
       company: "Vent Africa",
       url: "https://vent.africa",
       status: "live" as const,
       problem:
-        "Led mobile and platform development for a crypto trading ecosystem.",
+        "Built a crypto finance platform for trading, stablecoin storage, and instant payouts across Africa.",
       built: [
         "Multi-asset trading",
         "Fiat and crypto withdrawals",
+        "Bank payout infrastructure",
         "Transaction analytics",
         "In-app education platform",
         "Gamified referral system",
       ],
       impact: [
+        "Trusted by thousands of users",
         "50% increase in retention",
         "Improved performance and security",
       ],
@@ -129,38 +132,45 @@ export const siteContent = {
         "Real-time chat",
         "Creator monetization tools",
       ],
-      impact: [],
+      impact: [
+        "Live video streaming infrastructure",
+        "Creator monetization system",
+        "Real-time chat & ticketing",
+        "Digital wallet integration",
+      ],
     },
     {
-      title: "Service Marketplace & Delivery",
+      title: "Multi-Service Delivery Platform",
       company: "Trazo",
       url: "https://usetrazo.com",
       status: "live" as const,
       problem:
-        "Designed and built an extensible service marketplace from scratch — not limited to food.",
+        "Built a multi-service delivery platform for food, groceries, pharmacy, gas, laundry, and cleaning across Nigerian cities.",
       built: [
         "End-to-end ordering with scheduled/future orders",
         "Wallet system with card and bank top-ups",
         "\"Pay-for-Me\" social commerce feature",
         "Real-time delivery tracking with QR verification",
         "Rider earnings and wallet management",
+        "Multi-city operations",
       ],
       impact: [
-        "Full system architected and shipped from zero",
-        "Built and grew the engineering team",
+        "Live across cities in Nigeria",
+        "4+ service categories on one platform",
+        "Full system architected and shipped",
       ],
     },
     {
-      title: "Live Entertainment Platform",
+      title: "Talent Discovery Platform",
       company: "De9jaSpirit Talent Hunt",
       url: "https://dth.ng",
       status: "live" as const,
       problem:
-        "Built the full talent competition experience — from auditions to live voting to monetization.",
+        "Built a talent discovery and competition platform, from applications to live voting to weekly rewards.",
       built: [
+        "Contestant application and audition pipeline",
         "Talent competition with seasonal voting rounds",
         "Social timeline with posts, reactions, and short-form video",
-        "Event ticketing with QR code passes",
         "Live streaming for performances",
         "In-app e-commerce and subscription system",
         "Ad placement algorithm balancing revenue and UX",
@@ -176,14 +186,14 @@ export const siteContent = {
       url: "https://buychops.com",
       status: "coming-soon" as const,
       problem:
-        "Architected and built a food delivery platform end-to-end — customer, merchant, and rider systems.",
+        "Built a food delivery platform end-to-end, customer and rider systems.",
       built: [
+        "Search and ordering system",
+        "Gamified ordering experience",
         "Real-time delivery tracking",
-        "Payment integration",
         "Notification infrastructure",
-        "Established engineering processes and team",
       ],
-      impact: [],
+      impact: ["Coming soon"],
     },
     {
       title: "Food Delivery System",
@@ -193,12 +203,18 @@ export const siteContent = {
       problem:
         "Designed full system architecture and built User, Vendor, and Delivery apps through to production launch.",
       built: [
+        "Menu creation system",
+        "Food search and ordering",
         "Real-time communication",
         "Payment infrastructure",
         "Notification system",
         "CI/CD pipeline",
       ],
-      impact: [],
+      impact: [
+        "Empowered first-time restaurants to experience food delivery",
+        "Extended restaurant revenue through digital ordering",
+        "3 apps delivered (customer, vendor, rider)",
+      ],
     },
   ],
 
@@ -221,7 +237,7 @@ export const siteContent = {
     workshops: {
       title: "AI Beyond the Chat Interface",
       description:
-        "I run hands-on sessions teaching people across fields — engineers, product designers, product managers, institutional professionals, and more — how to use AI as an executable thinking and execution tool, not just a chatbot.",
+        "I run hands-on sessions teaching people across fields, engineers, product designers, product managers, institutional professionals, and more, how to use AI as an executable thinking and execution tool, not just a chatbot.",
       result:
         "Participants typically report productivity increases of 200–500% after integrating AI into their existing workflows.",
       participants: [
@@ -297,14 +313,6 @@ export const siteContent = {
     ],
   },
 
-  interests: [
-    "Football",
-    "Teaching",
-    "Mentoring",
-    "Chess",
-    "Sketching",
-    "Systems Thinking",
-  ],
 
   thesis: {
     statement:

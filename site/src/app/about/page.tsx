@@ -1,6 +1,7 @@
 import Section from "@/components/Section";
 import { siteContent } from "@/lib/content";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -12,17 +13,29 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="pt-20">
-      <Section>
-        <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
-          About
-        </p>
-        <h1 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
-          {siteContent.name}
-        </h1>
-        <p className="mb-16 max-w-2xl text-lg text-muted">
-          {siteContent.title}
-        </p>
-      </Section>
+      <section className="relative overflow-hidden px-6 py-24">
+        <div className="pointer-events-none absolute inset-0">
+          <Image
+            src="/emmanuel-ai.jpg"
+            alt=""
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-6xl">
+          <p className="mb-4 font-mono text-sm tracking-widest text-accent uppercase">
+            About
+          </p>
+          <h1 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
+            {siteContent.name}
+          </h1>
+          <p className="max-w-2xl text-lg text-muted">
+            {siteContent.title}
+          </p>
+        </div>
+      </section>
 
       {/* Story */}
       <Section className="bg-surface">
@@ -81,24 +94,6 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* Interests */}
-      <Section className="bg-surface">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="mb-6 text-2xl font-bold text-foreground">
-            Interests
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {siteContent.interests.map((interest) => (
-              <span
-                key={interest}
-                className="rounded-full bg-accent/10 px-4 py-2 text-sm font-medium text-accent"
-              >
-                {interest}
-              </span>
-            ))}
-          </div>
-        </div>
-      </Section>
 
       {/* Personal Thesis */}
       <Section>

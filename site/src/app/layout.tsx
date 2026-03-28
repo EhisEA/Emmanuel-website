@@ -8,7 +8,7 @@ const siteUrl = "https://emmanuel-a.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Emmanuel Ayemere — Software Engineer & Systems Architect",
+    default: "Emmanuel Ayemere | Software Engineer & Systems Architect",
     template: "%s | Emmanuel Ayemere",
   },
   description:
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Emmanuel Ayemere", url: siteUrl }],
   creator: "Emmanuel Ayemere",
   openGraph: {
-    title: "Emmanuel Ayemere — Software Engineer & Systems Architect",
+    title: "Emmanuel Ayemere | Software Engineer & Systems Architect",
     description:
       "Building software systems, teams, and tools for the AI era.",
     url: siteUrl,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emmanuel Ayemere — Software Engineer & Systems Architect",
+    title: "Emmanuel Ayemere | Software Engineer & Systems Architect",
     description:
       "Building software systems, teams, and tools for the AI era.",
   },

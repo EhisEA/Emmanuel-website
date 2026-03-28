@@ -49,12 +49,7 @@ export default function SystemsPage() {
                   </h2>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span
-                    className={`rounded-full px-3 py-1 font-mono text-[11px] font-medium uppercase tracking-wider ${statusStyles[system.status]}`}
-                  >
-                    {statusLabels[system.status]}
-                  </span>
-                  {system.url && system.status === "live" && (
+                  {system.url && (
                     <a
                       href={system.url}
                       target="_blank"

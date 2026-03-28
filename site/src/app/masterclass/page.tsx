@@ -19,6 +19,7 @@ const experienceLevels = [
   "I've tried ChatGPT a few times",
   "I use AI regularly but want to go deeper",
   "I use AI daily and want to push boundaries",
+  "I build with AI and want to explore what's next",
 ];
 
 function TypingText({ text, className = "" }: { text: string; className?: string }) {
@@ -127,12 +128,12 @@ export default function MasterclassPage() {
                 <span className="text-foreground font-medium">their workflow</span>.
               </p>
               <p>
-                The gap isn&apos;t awareness — it&apos;s <span className="text-accent font-semibold">execution</span>.
+                The gap isn&apos;t awareness, it&apos;s <span className="text-accent font-semibold">execution</span>.
               </p>
               <p>
                 This isn&apos;t a class where you sit and listen. You&apos;ll work through
                 real case study simulations, solve actual problems live, and walk out
-                ready to execute — not just informed, but <span className="text-foreground font-medium">already doing it</span>.
+                ready to execute, not just informed, but <span className="text-foreground font-medium">already doing it</span>.
               </p>
               <p>
                 The goal is not to gather knowledge. It&apos;s to{" "}
@@ -160,7 +161,7 @@ export default function MasterclassPage() {
           >
             <div className="relative overflow-hidden rounded-2xl border border-border">
               <Image
-                src="/emmanuel-v6.jpg"
+                src="/emmanuel-ai-2.jpg"
                 alt="Emmanuel Ayemere"
                 width={400}
                 height={500}
@@ -187,10 +188,10 @@ export default function MasterclassPage() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              "Work through real case study simulations — not slides, not theory",
+              "Work through real case study simulations, not slides, not theory",
               "Leave with AI integrated into your actual workflow, not just your awareness",
               "Build execution patterns you can repeat on Monday morning",
-              "Think with AI, solve with AI, ship with AI — in one session",
+              "Think with AI, solve with AI, ship with AI, in one session",
             ].map((item, i) => (
               <motion.div
                 key={item}
@@ -300,7 +301,7 @@ export default function MasterclassPage() {
                           <span className="font-medium text-foreground">
                             AI Beyond the Chat Interface
                           </span>{" "}
-                          — a hands-on masterclass that transforms how you work with AI.
+                          , a hands-on masterclass that transforms how you work with AI.
                         </p>
                         <p>
                           I review every application personally. This helps me understand
@@ -371,7 +372,7 @@ export default function MasterclassPage() {
                         />
                       </div>
                       <p className="text-xs text-muted">
-                        This isn&apos;t just for engineers. If you work with ideas, decisions, or output — this is for you.
+                        This isn&apos;t just for engineers. If you work with ideas, decisions, or output, this is for you.
                       </p>
                     </div>
                   )}
@@ -451,7 +452,7 @@ export default function MasterclassPage() {
                   {step === 5 && (
                     <div className="space-y-5">
                       <p className="font-mono text-sm text-accent">
-                        <TypingText text="> One more thing — optional but encouraged." />
+                        <TypingText text="> One more thing, optional but encouraged." />
                       </p>
                       <div>
                         <label htmlFor="whyAdmit" className="mb-1 block text-sm font-medium text-foreground">
@@ -468,7 +469,7 @@ export default function MasterclassPage() {
                         />
                       </div>
                       <p className="text-xs text-muted">
-                        This is optional — but a strong answer helps your application stand out.
+                        This is optional, but a strong answer helps your application stand out.
                       </p>
                     </div>
                   )}

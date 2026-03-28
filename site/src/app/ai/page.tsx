@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AI Experiments",
   description:
-    "Teaching people across fields to use AI as an executable thinking and execution tool — not just a chatbot.",
+    "Teaching people across fields to use AI as an executable thinking and execution tool, not just a chatbot.",
   alternates: { canonical: "/ai" },
 };
 

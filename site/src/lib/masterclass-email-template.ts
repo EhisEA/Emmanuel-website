@@ -105,7 +105,7 @@ export function buildMasterclassEmailHtml(
           <!-- Footer -->
           <tr>
             <td align="center" style="padding-top:32px;">
-              <span style="font-size:12px;color:#9CA3AF;">AI Beyond the Chat Interface — Masterclass Application</span>
+              <span style="font-size:12px;color:#9CA3AF;">AI Beyond the Chat Interface | Masterclass Application</span>
             </td>
           </tr>
         </table>

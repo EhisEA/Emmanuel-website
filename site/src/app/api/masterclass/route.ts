@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev",
       to: recipients,
-      subject: `Masterclass Application — ${name} (${role})`,
+      subject: `Masterclass Application | ${name} (${role})`,
       replyTo: email,
       text: `Name: ${name}\nEmail: ${email}\nRole: ${role}\nAI Experience: ${experience}\n\nGoal:\n${goal}${whyText}`,
       html: buildMasterclassEmailHtml(name, email, role, experience, goal, whyAdmit),

@@ -101,17 +101,6 @@ export default function Home() {
                       <p className="text-xs text-muted">{system.company}</p>
                     </div>
                   </div>
-                  <span
-                    className={`rounded-full px-2.5 py-0.5 font-mono text-[10px] font-medium uppercase tracking-wider ${
-                      system.status === "live"
-                        ? "bg-emerald-500/10 text-emerald-400"
-                        : system.status === "coming-soon"
-                          ? "bg-amber-500/10 text-amber-400"
-                          : "bg-zinc-500/10 text-zinc-500"
-                    }`}
-                  >
-                    {system.status === "coming-soon" ? "Coming Soon" : system.status}
-                  </span>
                 </div>
                 <p className="mb-4 text-sm text-muted">{system.problem}</p>
                 {system.impact.length > 0 && (
@@ -126,7 +115,7 @@ export default function Home() {
                     ))}
                   </div>
                 )}
-                {system.url && system.status === "live" && (
+                {system.url && (
                   <a
                     href={system.url}
                     target="_blank"
