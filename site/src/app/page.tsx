@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
-import Timeline from "@/components/Timeline";
 import BuildWithMe from "@/components/BuildWithMe";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import { siteContent } from "@/lib/content";
@@ -215,18 +214,6 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Timeline */}
-      <Section id="timeline" className="bg-surface">
-        <p className="mb-4 font-mono text-xs tracking-widest text-accent">
-          &gt; journey
-        </p>
-        <h2 className="mb-12 text-3xl font-bold text-foreground md:text-4xl">
-          Timeline
-        </h2>
-        <div className="mx-auto max-w-2xl">
-          <Timeline items={siteContent.timeline} />
-        </div>
-      </Section>
 
       {/* Mentoring */}
       <Section id="mentoring">

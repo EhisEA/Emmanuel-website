@@ -276,32 +276,6 @@ export const siteContent = {
     },
   },
 
-  timeline: [
-    {
-      year: "2020",
-      description:
-        "Built live streaming platform infrastructure for African creators.",
-    },
-    {
-      year: "2021",
-      description:
-        "Joined MobiHealth and rebuilt telemedicine infrastructure.",
-    },
-    {
-      year: "2022–2024",
-      description:
-        "Worked across fintech and crypto platforms building scalable systems.",
-    },
-    {
-      year: "2025",
-      description: "Architected marketplace and delivery platforms.",
-    },
-    {
-      year: "Now",
-      description:
-        "Exploring AI-assisted system design and agentic development workflows.",
-    },
-  ],
 
   writing: {
     intro: "Topics I enjoy writing about:",
